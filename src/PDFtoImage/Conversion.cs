@@ -582,6 +582,9 @@ namespace PDFtoImage
             if (withAnnotations)
                 renderFlags |= PdfRenderFlags.Annotations;
 
+
+         //   renderFlags = PdfRenderFlags.Transparent;
+
             // Stream -> PdfiumViewer.PdfDocument
             using var pdfDocument = PdfDocument.Load(pdfStream, password);
 

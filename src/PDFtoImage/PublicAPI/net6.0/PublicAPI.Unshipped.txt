@@ -1,1 +1,4 @@
 ﻿#nullable enable
+PDFtoImage.PdfiumViewer.PdfDocument
+PDFtoImage.PdfiumViewer.PdfDocument.Render(int page, int width, int height, float dpiX, float dpiY, PDFtoImage.PdfiumViewer.PdfRenderFlags flags, bool renderFormFill) -> SkiaSharp.SKBitmap!
+PDFtoImage.PdfiumViewer.PdfDocument.Render(int page, int width, int height, float dpiX, float dpiY, PDFtoImage.PdfiumViewer.PdfRotation rotate, PDFtoImage.PdfiumViewer.PdfRenderFlags flags, bool renderFormFill) -> SkiaSharp.SKBitmap!

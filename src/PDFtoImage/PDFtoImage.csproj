@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <!-- Assembly -->
   <PropertyGroup>
-    <TargetFrameworks>net6.0;netcoreapp3.1;net462</TargetFrameworks>
+    <TargetFrameworks>net6.0;netcoreapp3.1;net462;net472</TargetFrameworks>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64;linux-x64;linux-arm;linux-arm64;osx-x64;osx-arm64</RuntimeIdentifiers>
     <AssemblyName>PDFtoImage</AssemblyName>
     <RootNamespace>PDFtoImage</RootNamespace>
     <EmbedAllSources>true</EmbedAllSources>
     <AssemblyOriginatorKeyFile>PDFtoImage.snk</AssemblyOriginatorKeyFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Configurations>Debug;Release;ReleaseSigned</Configurations>
+    <Configurations>Debug;Release;ReleaseSigned;Debug2</Configurations>
   </PropertyGroup>
 
   <!-- NuGet -->
@@ -43,10 +43,14 @@
     <WarningsAsErrors>nullable;RS0017;RS0024;RS0025;RS0026;RS0036;RS0037;RS0041;RS0048;RS0050</WarningsAsErrors>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <!-- Debug builds -->
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <VersionSuffix>debug</VersionSuffix>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug2'">
     <VersionSuffix>debug</VersionSuffix>
   </PropertyGroup>
 

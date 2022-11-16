@@ -6,7 +6,7 @@ namespace PDFtoImage.PdfiumViewer
     /// Flags that influence the page rendering process.
     /// </summary>
     [Flags]
-    internal enum PdfRenderFlags
+    public enum PdfRenderFlags
     {
         /// <summary>
         /// No flags.

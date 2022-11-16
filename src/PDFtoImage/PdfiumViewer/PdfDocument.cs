@@ -11,7 +11,7 @@ namespace PDFtoImage.PdfiumViewer
     /// <summary>
     /// Provides functionality to render a PDF document.
     /// </summary>
-    internal sealed class PdfDocument : IDisposable
+    public sealed class PdfDocument : IDisposable
     {
         private bool _disposed;
         private PdfFile? _file;

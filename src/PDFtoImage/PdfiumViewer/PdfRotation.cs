@@ -3,7 +3,7 @@
     /// <summary>
     /// Specifies the rotation of pages shown in the PDF renderer.
     /// </summary>
-    internal enum PdfRotation
+    public enum PdfRotation
     {
         /// <summary>
         /// Rotates the output 0 degrees.
